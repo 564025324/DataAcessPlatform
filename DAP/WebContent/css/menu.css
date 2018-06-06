@@ -1,0 +1,96 @@
+/* CSS Document */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	line-height:25px;
+	background-color:#fafafa;
+}
+.borderoff,.borderon {
+	font-size: 12px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: menu
+}
+.borderoff {
+	border-color: #808080 #FFFFFF #FFFFFF #808080;
+}
+.borderon {
+	border-color: #FFFFFF #808080 #808080 #FFFFFF;
+}
+.menu1,.menu2,.menu3,.menu4 {
+	font-size: 9pt;
+	background-repeat: no-repeat;
+	height: 17px;
+	left: 16px;
+	padding-left: 16px;
+	cursor: hand;
+}
+.menu1 {
+	background-image: url(../images/img_tree/folder1.gif);
+}
+.menu2 {
+	background-image: url(../images/img_tree/folder2.gif);
+}
+.menu3 {
+	background-image: url(../images/img_tree/folder3.gif);
+}
+.menu4{
+	background-image: url(../images/img_tree/folder4.gif);
+}
+.list{
+	height: 16px;
+	font-size: 9pt;
+	padding-left: 20px;
+	background-image: url(../images/img_tree/list.gif);
+	background-repeat: repeat-y;
+}
+.list1{
+	height: 17px;
+	font-size: 9pt;
+	padding-left: 20px;
+}
+.file,.file1 {
+	font-size: 9pt;
+	background-repeat: no-repeat;
+	height: 17px;
+	cursor: hand;
+	padding-left: 16px;
+}
+.file{
+	background-image: url(../images/img_tree/file.gif);
+}
+.file1 {
+	background-image: url(../images/img_tree/file1.gif);
+}
+a {
+	font-size: 9pt;
+	text-decoration: none;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #000000;
+}
+.item {
+	height:15px;
+	border:1px solid #FFFFFF;
+	padding-top:1px;
+}
+
+.scrollbar{
+SCROLLBAR-FACE-COLOR: #fcfcfc;
+ SCROLLBAR-HIGHLIGHT-COLOR: #6c6c90;
+ SCROLLBAR-SHADOW-COLOR: #fcfcfc;
+ SCROLLBAR-3DLIGHT-COLOR: #fcfcfc;
+ SCROLLBAR-TRACK-COLOR: #fcfcfc;
+ SCROLLBAR-DARKSHADOW-COLOR: #48486c;
+ SCROLLBAR-BASE-COLOR: #fcfcfc;
+}

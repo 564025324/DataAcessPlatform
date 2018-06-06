@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<!-- 反洗钱可疑数据导入导出功能 -->
+	<!-- <package name="sop_fxq_kydata_flow" extends="guosenMng"> -->
+	<!-- 反洗钱首页 -->
+	<!-- <action name="sop_fxq_kydata_index" class="sopfxqkydataAction" -->
+	<!-- method="fxqKyDataIndex"> -->
+	<!-- <result name="success">/jsp/sop/fxqkydate/fxqKyDataIndex.jsp</result> -->
+	<!-- <result name="error">/error.html</result> -->
+	<!-- </action> -->
+	<!-- 导入文件 -->
+	<!-- <action name="sop_fxq_kydata_importFile" -->
+	<!-- class="sopfxqkydataAction" method="fxqKydataImportFile"> -->
+	<!-- <interceptor-ref name="fileUpload"> -->
+	<!-- <param name="maximumSize">5242880</param> -->
+	<!-- </interceptor-ref> -->
+	<!-- <interceptor-ref name="defaultStack" /> -->
+	<!-- <result name="error">/error.html</result> -->
+	<!-- <result name="input">/jsp/sop/fxqkydate/fxqKyDataIndex.jsp</result> -->
+	<!-- <result name="success">/jsp/sop/fxqkydate/fxqKyDataIndex.jsp</result> -->
+	<!-- </action> -->
+	<!-- 导出当日存储过程dbo.proc_get_fxq_kydata执行结果 -->
+	<!-- <action name="sop_fxq_kydata_export" class="sopfxqkydataAction" -->
+	<!-- method="fxqKydataExportResult"> -->
+	<!-- <result name="success" type="stream"> -->
+	<!-- <param name="contentType">application/vnd.ms-excel</param> -->
+	<!-- <param name="contentDisposition">attachment;filename="${downloadFileName}"</param> -->
+	<!-- <param name="inputName">downloadFile</param> -->
+	<!-- <param name="buffersize">4096</param> -->
+	<!-- </result> -->
+	<!-- <result name="error">/error.html</result> -->
+	<!-- </action> -->
+	<!-- 反洗钱可疑数据导入导出功能 END -->
+	<!-- </package> -->
+
+	<!-- 提数管理 -->
+	<!-- 互产部提数 -->
+	<package name="download_data_package" extends="guosenMng">
+		<!-- 匹配客户账户信息 - 首页 -->
+		<action name="dd_hcdept_ppkhInfo" class="downDataAction"
+			method="ppkhInfoForward">
+			<result name="success">/jsp/sop/downloaddata/dd_hcdept_ppkhInfo.jsp
+			</result>
+			<result name="error">/error.html</result>
+		</action>
+		<!-- 匹配客户账户信息 - 查询 -->
+		<action name="dd_hcdept_pphkquery" class="downDataAction"
+			method="ppkhQuery">
+			<result name="success">/jsp/sop/downloaddata/dd_hcdept_ppkhInfo.jsp
+			</result>
+			<result name="error">/error.html</result>
+		</action>
+		<!-- 导入文件 -->
+		<action name="ppkh_importFile" class="downDataAction"
+			method="ppkhImportFile">
+			<interceptor-ref name="fileUpload">
+				<!-- 文件大小，一字节为单位 -->
+				<param name="maximumSize">5242880</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<result name="error">/error.html</result>
+			<result name="input">/jsp/sop/downloaddata/dd_hcdept_ppkhInfo.jsp
+			</result>
+			<result name="success">/jsp/sop/downloaddata/dd_hcdept_ppkhInfo.jsp
+			</result>
+		</action>
+		<!-- 导出当日数据 -->
+		<action name="ppkh_exportExcel" class="downDataAction"
+			method="ppkhExportExcel">
+			<result name="success" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+				<param name="contentDisposition">attachment;filename="${downloadFileName}"</param>
+				<param name="input">downloadFile</param>
+				<param name="buffersize">4096</param>
+			</result>
+			<result name="error">/error.html</result>
+		</action>
+	</package>
+
+
+</struts>

@@ -1,0 +1,16 @@
+body{ font-size:12px; margin:0px; font-family: "宋体","Verdana"; background:url(../images/login.bg.gif) repeat-x;}
+a:visited {	font-family: Arial, "宋体";font-size: 12px;color: #000000;text-decoration: none;}
+a:link {font-family: Arial, "宋体";font-size: 12px;color: #000000;text-decoration: none;}
+a:hover {font-family: Arial, "宋体";font-size: 12px;color: #1A6C9C;text-decoration: underline;}
+
+.wrapper{padding-top:120px;text-align:center;}
+.main{margin:0 auto;width:640px;background:url(../images/login.line.gif) no-repeat center top;overflow:hidden;}
+.col2_left{float:left;width:320px;text-align:center;}
+.col2_right{float:right;width:260px;text-align:left;padding-top:90px; line-height:1.8em;}
+.logo{background:url(../images/login.logo.gif) no-repeat;width:181px;height:210px;display:block;margin:60px auto 0;}
+.login_button{text-align:center;line-height:1.2em;}
+.username,.password{margin-bottom:2px;display:block;}
+.username strong,.password strong {width:60px;display:block;float:left;}
+.username input,.password input{width:150px;}
+.err{margin-bottom:4px;display:block;color:#ff0000;}
+.caption{font-weight: bold; font-size: 15px; display:block; color:#07217A;}

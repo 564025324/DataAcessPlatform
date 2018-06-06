@@ -1,0 +1,48 @@
+@CHARSET "GB18030";
+body{
+	font-size:12px; 
+	margin:0px; 
+	font-family: "宋体", "Arail", "Verdana";
+	line-height: 1.5em;
+}
+
+.table_BlueTitle th{
+	background: none repeat scroll 0 0 #EBF4FB;
+	text-align: center;
+	font-weight: 400;
+	font-size: 12px;	
+	letter-spacing: 1px;
+	padding: 1px;
+	white-space: nowrap;	
+}
+
+.float_right{
+	float: rigtht;
+}
+
+.float_left{
+	float: left;
+}
+
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0;
+	white-space: pre-line;
+}
+
+.algin_Center{
+	text-align: center;
+} 
+
+.align_Left{
+	text-align: left;
+}
+
+/*
+tr.algin_Center:hover {	
+	 background-color: #EBF4FB;
+} 
+*/

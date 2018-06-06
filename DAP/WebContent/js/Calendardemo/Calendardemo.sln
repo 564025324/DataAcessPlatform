@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendardemo", "http://localhost/Calendardemo/Calendardemo.csproj", "{D8D5A328-95E8-47F7-86A5-4939C71283FB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D8D5A328-95E8-47F7-86A5-4939C71283FB}.Debug.ActiveCfg = Debug|.NET
+		{D8D5A328-95E8-47F7-86A5-4939C71283FB}.Debug.Build.0 = Debug|.NET
+		{D8D5A328-95E8-47F7-86A5-4939C71283FB}.Release.ActiveCfg = Release|.NET
+		{D8D5A328-95E8-47F7-86A5-4939C71283FB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

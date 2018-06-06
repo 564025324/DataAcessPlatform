@@ -1,0 +1,19 @@
+<HEAD>
+	<LINK HREF="Calendar.css" TYPE="text/css" REL="stylesheet">
+		<script src="Calendar.js"></script>
+</HEAD>
+<BODY>
+	<div id="calendar"></div>
+	<FORM METHOD="post" name="aa">
+		<table cellSpacing="1" cellPadding="1" width="100%" border="0">
+			<tr>
+				<td>
+					<!--日期实例化--begin-->
+					<input type="text" name="txtDATE" size="10" onchange='javascript:gChangeDate(this,0);'
+						onblur='javascript:gChangeDate(this,0);'> <INPUT TYPE="button" value='...' NAME='bntDATE' OnClick='showCalendar(txtDATE,0)' class="button">
+					<!--end-->
+				</td>
+			</tr>
+		</table>
+	</FORM>
+</BODY>
