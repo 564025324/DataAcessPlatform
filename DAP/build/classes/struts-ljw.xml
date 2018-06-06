@@ -84,5 +84,12 @@
 		</action>
 	</package>
 
+	<!-- 对账单 -->
+	<package name="Dzd" extends="guosenMng">
+		<action name="exportDzdFile" class="dzd">
+		
+		</action>
+	</package>
+
 
 </struts>
