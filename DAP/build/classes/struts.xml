@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定Struts 2配置文件的DTD信息 -->
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<!-- struts是Struts 2配置文件的根元素 -->
+<struts>
+	<include file="struts-ljw.xml" />
+
+	<!-- <constant name="struts.ui.theme" value="simple" /> -->
+	<!--定义编码格式为UTF-8，与ajax的post方式统一 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!--定义Struts2允许上传文件的最大值5M -->
+	<!-- <constant name="struts.multipart.maxSize" value="5242880" /> -->
+
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<!-- <constant name="struts.devMode" value="false" /> -->
+
+	<package name="guosenMng" extends="struts-default">
+	</package>
+</struts>
